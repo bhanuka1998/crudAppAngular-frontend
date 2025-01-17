@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { Router } from '@angular/router';
 import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-add-product',
+  standalone: true,
+  imports: [FormsModule], // Add FormsModule here
   templateUrl: './add-product.component.html',
   styleUrls: ['./add-product.component.css'],
 })
